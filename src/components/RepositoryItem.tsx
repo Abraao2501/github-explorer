@@ -1,4 +1,12 @@
-export function RepositoryItem(props){
+interface RepositoryItem {
+  repository : {
+    name: string;
+    description: string;
+    html_url: string;
+  }
+}
+
+export function RepositoryItem(props:RepositoryItem){
   return (
   <li className="mt-4 first:m-0">
     <strong>
